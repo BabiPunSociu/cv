@@ -4,9 +4,8 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   /**
    * mode: 'history' | 'hash' | 'abstract'
-   * Không dùng được history vì github pages không hỗ trợ SPA.
    */
-  mode: "hash",
+  mode: "history",
   base: "/cv/",
   routes: [
     {
