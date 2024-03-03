@@ -1,0 +1,25 @@
+div.project__title {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+
+  div.project-name {
+    text-wrap: wrap;
+    word-wrap: break-word;
+    font: var(--font-size-desktop) bold;
+    font-weight: bold;
+  }
+  div.time-work-in-project {
+    font: var(--font-size-desktop) bold;
+    font-weight: bold;
+  }
+}
+
+div.project-content {
+  margin-top: 1em;
+  font: var(--font-size-desktop);
+
+  div.position {
+    margin-bottom: 1em;
+  }
+}

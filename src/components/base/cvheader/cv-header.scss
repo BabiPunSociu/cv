@@ -1,0 +1,22 @@
+div.cv-header {
+  width: 100%;
+  padding: 20px;
+  background: rgb(124, 122, 121);
+  color: rgb(252, 248, 224);
+  white-space: pre-wrap;
+  line-height: 1.5;
+  text-align: end;
+
+  div.full-name {
+    font-size: 36px;
+    color: #FCF8E0;
+    text-shadow: -2px 2px rgb(166, 167, 168);
+    font-weight: bold;
+  }
+
+  div.position {
+    font-size: 14px;
+    color: #FCF8E0;
+    font-weight: bold;
+  }
+}

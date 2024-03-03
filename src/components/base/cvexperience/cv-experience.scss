@@ -1,0 +1,25 @@
+div.experience__company {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+
+  div.company-name {
+    text-wrap: wrap;
+    word-wrap: break-word;
+    font: var(--font-size-desktop) bold;
+    font-weight: bold;
+  }
+  div.time-work-in-company {
+    font: var(--font-size-desktop) bold;
+    font-weight: bold;
+  }
+}
+
+div.experience__content {
+  margin-top: 1em;
+  font: var(--font-size-desktop);
+
+  div.position {
+    margin-bottom: 1em;
+  }
+}

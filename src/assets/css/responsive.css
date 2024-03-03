@@ -1,0 +1,18 @@
+/* For mobile phones: */
+[class*="col-"] {
+    font-size: var(--font-size-mobile);
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    * {
+        font-size: var(--font-size-tablet);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    * {
+        font-size: var(--font-size-desktop);
+    }
+}

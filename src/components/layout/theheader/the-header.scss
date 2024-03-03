@@ -1,0 +1,109 @@
+header {
+  width: 100%;
+  height: var(--height-header);
+  padding: 0 16px;
+  display: flex;
+  background-color: var(--white);
+  justify-content: space-between;
+
+  /* css bên trái */
+  .header-left {
+    display: flex;
+    align-items: center;
+    width: 50%;
+
+    .mi-three-stripes {
+      display: none;
+    }
+    @media screen and (max-width: 768px) {
+      .mi-three-stripes {
+        display: block;
+      }
+    }
+
+    p {
+      margin-left: 20px;
+    }
+  }
+
+  /* css bên phải */
+  .header-right {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 50%;
+    gap: 1.5em;
+
+    /* button download CV */
+
+    /* css nút github */
+    a.btn-github {
+      i.fa-brands.fa-github {
+        transform: scale(1.5);
+      }
+    }
+    a.btn-github:hover {
+      cursor: pointer;
+      animation: spin 2s infinite linear;
+    }
+    @keyframes spin {
+      0% {
+        transform: scale(1) rotate(0deg); 
+      }
+      10% {
+        transform: scale(1.5) rotate(0deg); 
+      }
+      100% {
+        transform: scale(1.5) rotate(360deg);
+      }
+    }
+
+    /* css nút chọn ngôn ngữ */
+    a.btn-language {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 0;
+      padding: 0;
+
+      img {
+        width: 1.75em;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+    a.btn-language:hover {
+      cursor: pointer;
+      animation: spin 2s infinite linear;
+    }
+
+    ul.lang-list {
+      background: #ffffff;
+      box-shadow: 0 4px 16px rgba(23, 27, 42, 0.24);
+      position: absolute;
+      top: 56px;
+      right: 1em;
+      padding: 0.5em;
+      width: 10em;
+      border-radius: var(--border-radius-default);
+      max-height: 200px;
+      overflow-y: auto;
+
+      li {
+        list-style-type: none;
+        height: 36px;
+        border-radius: var(--border-radius-default);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--color-text-default);
+        padding: 8px;
+      }
+
+      li:hover {
+        cursor: pointer;
+        background-color: rgba(80, 184, 60, 0.1);
+      }
+    }
+  }
+}

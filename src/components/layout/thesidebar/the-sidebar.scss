@@ -1,0 +1,111 @@
+.menu-container {
+  z-index: 5;
+  width: 17vw;
+  height: 100vh;
+  background-color: var(--slide-bar-background-color);
+  background-color: var(--bg-color-sidebar); /* zero */
+
+  .logo-container {
+    display: flex;
+    height: 48px;
+    padding: 0 24px;
+    align-items: center;
+    justify-content: center;
+
+    .menu-container-options {
+      margin-right: 10px;
+    }
+
+    a.logo {
+      display: flex;
+      align-items: center;
+      font-family: NVD Logo, sans-serif;
+      font-size: 2.5rem; /* 2.5 x 14px = 35px */
+      background: linear-gradient(
+        90deg,
+        rgb(255 66 0) 0%,
+        #00ff66 100%
+      ); /* linear-gradient(90deg, rgb(11 255 0) 0%, #00d0ff 100%) */
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-wrap: nowrap;
+      animation: fadein 1s linear;
+    }
+
+    @media screen and (max-width: 1024px) {
+      a.logo {
+        font-size: 2.2rem;
+      }
+    }
+    @media screen and (max-width: 912px) {
+      a.logo {
+        font-size: 1.9rem;
+      }
+    }
+    @media screen and (max-width: 820px) {
+      a.logo {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  .menu-item-list {
+    height: calc(100vh - 48px); /* 48px = height logo-container */
+    padding: 20px 12px; /* zero */
+
+    .menu-item {
+      display: flex;
+      height: 44px;
+      color: #869ab8;
+      cursor: pointer;
+      margin-bottom: 4px; /* zero */
+      border-radius: var(--border-radius-default); /* zero */
+      align-items: center;
+
+      .menu-item__icon {
+        display: flex;
+        align-items: center;
+        margin: 0 12px;
+      }
+
+      .menu-item__title {
+        color: #869ab8;
+      }
+    }
+
+    .menu-item:hover {
+      border-radius: 6px; /* zero */
+      background-color: #27395e; /* zero */
+    }
+
+    /* ----- menu item active ----- */
+    .menu-item:active,
+    .menu-item:focus {
+      background-color: #a7c4ff; /* zero */
+      border-radius: var(--border-radius-default); /* zero */
+    }
+    .menu-item:active .menu-item__title,
+    .menu-item:focus .menu-item__title {
+      color: #fff;
+    }
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu-container {
+    display: none;
+    width: 50%;
+  }
+}

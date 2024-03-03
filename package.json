@@ -1,0 +1,23 @@
+{
+  "name": "cv",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "html2pdf.js": "^0.10.1",
+    "tiny-emitter": "^2.1.0",
+    "vue": "^3.4.15",
+    "vue-router": "^4.2.5",
+    "vue3-pdfmake": "^2.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.3",
+    "sass": "^1.71.1",
+    "vite": "^5.0.11"
+  }
+}

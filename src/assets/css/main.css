@@ -1,0 +1,35 @@
+/* import các file css dùng chung */
+@import url(./base.css);
+@import url(./icon.css);
+@import url(./scroller.css);
+@import url(./responsive.css);
+
+/* Định nghĩa css chung */
+* {
+  font-family: NVD Fonts;
+  font-size: var(--font-size-mobile); /* mobile */
+  color: #212121;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  text-transform: none;
+
+  /* Tablet */
+  @media screen and (min-width: 600px) {
+    font-size: var(--font-size-tablet);
+  }
+
+  /* Desktop */
+  @media screen and (min-width: 768px) {
+    font-size: var(--font-size-desktop);
+  }
+}
+
+body {
+  margin: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  overflow: hidden;
+}
