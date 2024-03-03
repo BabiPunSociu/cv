@@ -2,6 +2,12 @@ import { createRouter, createWebHistory } from "vue-router";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
+  /**
+   * mode: 'history' | 'hash' | 'abstract'
+   * Không dùng được history vì github pages không hỗ trợ SPA.
+   */
+  mode: "hash",
+  base: "/cv/",
   routes: [
     {
       path: "/",

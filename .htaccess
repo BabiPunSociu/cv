@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /cv/
+
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ /index.html [L]
