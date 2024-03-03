@@ -10,6 +10,11 @@ const router = createRouter({
   routes: [
     {
       path: "/",
+      name: "DevBackendRPSoftRouter",
+      component: () => import("../views/backend/rpsoft/BackendRPSoft.vue"),
+    },
+    {
+      path: "/devFullstack",
       name: "WebFullStackRouter",
       component: () => import("../views/webfullstack/WebFullStack.vue"),
       children: [
@@ -20,11 +25,7 @@ const router = createRouter({
         },
       ],
     },
-    {
-      path: "/devBackend-RPSoft",
-      name: "DevBackendRPSoftRouter",
-      component: () => import("../views/backend/rpsoft/BackendRPSoft.vue"),
-    },
+
     {
       name: "NotFound",
       path: "/:catchAll(.*)", // Bắt tất cả

@@ -13,19 +13,18 @@
             ><div class="menu-item__icon">
               <div class="mi mi-24 mi-sidebar-invoice"></div>
             </div>
-            <div class="menu-item__title">CV Web Full Stack</div></router-link
+            <div class="menu-item__title">CV Backend RPSoft</div></router-link
           >
         </div>
         <!-- RouterLink -->
         <div class="parent-item-menu">
-          <router-link to="/devBackend-RPSoft" class="menu-item"
+          <router-link to="/devFullstack" class="menu-item"
             ><div class="menu-item__icon">
               <div class="mi mi-24 mi-sidebar-invoice"></div>
             </div>
-            <div class="menu-item__title">CV Backend RPSoft</div></router-link
+            <div class="menu-item__title">CV Web Full Stack</div></router-link
           >
         </div>
-
         <!-- RouterLink -->
         <div class="parent-item-menu">
           <router-link to="/devops/100" class="menu-item"
